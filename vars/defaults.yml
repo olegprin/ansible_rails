@@ -1,0 +1,21 @@
+## webapp
+
+webserver_name: spree.ryanbigg.com
+deploy_directory: /data/spree
+app_name: shop
+deploy: deploy
+#password: marazm999
+## stolen from https://github.com/jgrowl/ansible-playbook-ruby-from-src
+
+
+#rbenv_root: /usr/local/rbenv
+ruby_version: 2.2.3
+rbenv_makeopts: ""
+ip: 104.197.86.140
+home: '/home/{{ user }}'
+user: deploy
+rbenv_root: '{{ home }}/.rbenv'
+#DATABASE PARAMETERS
+dbname: myapp
+dbuser: django
+dbpassword: mysupersecretpassword

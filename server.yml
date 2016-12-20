@@ -1,0 +1,12 @@
+---
+- name: Deploy Rails
+  hosts: webserver
+  vars_files:
+    - vars/defaults.yml
+
+  roles:
+    #- for digital_ocean create-deploy-user
+    - package
+    - nginx
+    - rbenv
+    - postgres
